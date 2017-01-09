@@ -1,0 +1,192 @@
+Last login: Wed Jan  4 14:10:46 on console
+~ $ tracert vg.no
+-bash: tracert: command not found
+~ $ traceroute vg.no
+traceroute: Warning: vg.no has multiple addresses; using 195.88.54.16
+traceroute to vg.no (195.88.54.16), 64 hops max, 52 byte packets
+ 1  152.94.27.145 (152.94.27.145)  1.989 ms  1.460 ms  1.440 ms
+ 2  stavanger-gw4.uninett.no (128.39.47.121)  1.480 ms  1.412 ms  1.799 ms
+ 3  kristiansand-gw2.uninett.no (128.39.254.40)  4.646 ms  4.876 ms  5.216 ms
+ 4  kristiansand-gw1.uninett.no (128.39.231.69)  5.409 ms  5.272 ms  5.111 ms
+ 5  oslo-gw1.uninett.no (128.39.254.38)  10.459 ms  9.888 ms  9.925 ms
+ 6  * * *
+ 7  * * *
+ 8  * *^C
+~ $ traceroute uis.no
+traceroute: Warning: uis.no has multiple addresses; using 152.94.2.60
+traceroute to uis.no (152.94.2.60), 64 hops max, 52 byte packets
+ 1  * * *
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  *^C
+~ $ ping www.cisco.com
+PING e144.dscb.akamaiedge.net (23.13.243.130): 56 data bytes
+64 bytes from 23.13.243.130: icmp_seq=0 ttl=56 time=22.151 ms
+64 bytes from 23.13.243.130: icmp_seq=1 ttl=56 time=22.455 ms
+64 bytes from 23.13.243.130: icmp_seq=2 ttl=56 time=22.456 ms
+64 bytes from 23.13.243.130: icmp_seq=3 ttl=56 time=24.261 ms
+64 bytes from 23.13.243.130: icmp_seq=4 ttl=56 time=22.632 ms
+64 bytes from 23.13.243.130: icmp_seq=5 ttl=56 time=22.987 ms
+Request timeout for icmp_seq 6
+64 bytes from 23.13.243.130: icmp_seq=7 ttl=56 time=24.755 ms
+64 bytes from 23.13.243.130: icmp_seq=8 ttl=56 time=21.913 ms
+64 bytes from 23.13.243.130: icmp_seq=9 ttl=56 time=63.725 ms
+64 bytes from 23.13.243.130: icmp_seq=10 ttl=56 time=23.673 ms
+64 bytes from 23.13.243.130: icmp_seq=11 ttl=56 time=22.131 ms
+64 bytes from 23.13.243.130: icmp_seq=12 ttl=56 time=50.673 ms
+64 bytes from 23.13.243.130: icmp_seq=13 ttl=56 time=23.412 ms
+64 bytes from 23.13.243.130: icmp_seq=14 ttl=56 time=23.011 ms
+64 bytes from 23.13.243.130: icmp_seq=15 ttl=56 time=21.887 ms
+64 bytes from 23.13.243.130: icmp_seq=16 ttl=56 time=108.144 ms
+64 bytes from 23.13.243.130: icmp_seq=17 ttl=56 time=22.694 ms
+64 bytes from 23.13.243.130: icmp_seq=18 ttl=56 time=51.523 ms
+64 bytes from 23.13.243.130: icmp_seq=19 ttl=56 time=60.813 ms
+64 bytes from 23.13.243.130: icmp_seq=20 ttl=56 time=22.078 ms
+^C
+--- e144.dscb.akamaiedge.net ping statistics ---
+21 packets transmitted, 20 packets received, 4.8% packet loss
+round-trip min/avg/max/stddev = 21.887/33.869/108.144/21.869 ms
+~ $ ping -n 100 www.cisco.com
+usage: ping [-AaDdfnoQqRrv] [-c count] [-G sweepmaxsize]
+            [-g sweepminsize] [-h sweepincrsize] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern]
+            [-S src_addr] [-s packetsize] [-t timeout][-W waittime]
+            [-z tos] host
+       ping [-AaDdfLnoQqRrv] [-c count] [-I iface] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern] [-S src_addr]
+            [-s packetsize] [-T ttl] [-t timeout] [-W waittime]
+            [-z tos] mcast-group
+Apple specific options (to be specified before mcast-group or host like all options)
+            -b boundif           # bind the socket to the interface
+            -k traffic_class     # set traffic class socket option
+            -K net_service_type  # set traffic class socket options
+            -apple-connect       # call connect(2) in the socket
+            -apple-time          # display current time
+~ $ ping -c 20
+usage: ping [-AaDdfnoQqRrv] [-c count] [-G sweepmaxsize]
+            [-g sweepminsize] [-h sweepincrsize] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern]
+            [-S src_addr] [-s packetsize] [-t timeout][-W waittime]
+            [-z tos] host
+       ping [-AaDdfLnoQqRrv] [-c count] [-I iface] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern] [-S src_addr]
+            [-s packetsize] [-T ttl] [-t timeout] [-W waittime]
+            [-z tos] mcast-group
+Apple specific options (to be specified before mcast-group or host like all options)
+            -b boundif           # bind the socket to the interface
+            -k traffic_class     # set traffic class socket option
+            -K net_service_type  # set traffic class socket options
+            -apple-connect       # call connect(2) in the socket
+            -apple-time          # display current time
+~ $ ping -c 20 www.cisco.com
+PING e144.dscb.akamaiedge.net (23.13.243.130): 56 data bytes
+64 bytes from 23.13.243.130: icmp_seq=0 ttl=56 time=23.334 ms
+64 bytes from 23.13.243.130: icmp_seq=1 ttl=56 time=21.735 ms
+64 bytes from 23.13.243.130: icmp_seq=2 ttl=56 time=21.694 ms
+64 bytes from 23.13.243.130: icmp_seq=3 ttl=56 time=23.123 ms
+64 bytes from 23.13.243.130: icmp_seq=4 ttl=56 time=24.315 ms
+64 bytes from 23.13.243.130: icmp_seq=5 ttl=56 time=22.015 ms
+64 bytes from 23.13.243.130: icmp_seq=6 ttl=56 time=22.472 ms
+64 bytes from 23.13.243.130: icmp_seq=7 ttl=56 time=22.003 ms
+64 bytes from 23.13.243.130: icmp_seq=8 ttl=56 time=48.081 ms
+64 bytes from 23.13.243.130: icmp_seq=9 ttl=56 time=24.673 ms
+64 bytes from 23.13.243.130: icmp_seq=10 ttl=56 time=22.951 ms
+64 bytes from 23.13.243.130: icmp_seq=11 ttl=56 time=23.991 ms
+64 bytes from 23.13.243.130: icmp_seq=12 ttl=56 time=23.117 ms
+Request timeout for icmp_seq 13
+64 bytes from 23.13.243.130: icmp_seq=14 ttl=56 time=22.764 ms
+64 bytes from 23.13.243.130: icmp_seq=15 ttl=56 time=22.423 ms
+64 bytes from 23.13.243.130: icmp_seq=16 ttl=56 time=22.250 ms
+64 bytes from 23.13.243.130: icmp_seq=17 ttl=56 time=21.959 ms
+64 bytes from 23.13.243.130: icmp_seq=18 ttl=56 time=22.533 ms
+64 bytes from 23.13.243.130: icmp_seq=19 ttl=56 time=22.370 ms
+
+--- e144.dscb.akamaiedge.net ping statistics ---
+20 packets transmitted, 19 packets received, 5.0% packet loss
+round-trip min/avg/max/stddev = 21.694/24.095/48.081/5.713 ms
+~ $ ping www.afrinic.net
+PING www.afrinic.net (196.216.2.6): 56 data bytes
+64 bytes from 196.216.2.6: icmp_seq=0 ttl=50 time=230.818 ms
+64 bytes from 196.216.2.6: icmp_seq=1 ttl=50 time=229.132 ms
+64 bytes from 196.216.2.6: icmp_seq=2 ttl=50 time=229.545 ms
+64 bytes from 196.216.2.6: icmp_seq=3 ttl=50 time=228.505 ms
+64 bytes from 196.216.2.6: icmp_seq=4 ttl=50 time=229.051 ms
+64 bytes from 196.216.2.6: icmp_seq=5 ttl=50 time=228.088 ms
+64 bytes from 196.216.2.6: icmp_seq=6 ttl=50 time=228.765 ms
+64 bytes from 196.216.2.6: icmp_seq=7 ttl=50 time=228.257 ms
+64 bytes from 196.216.2.6: icmp_seq=8 ttl=50 time=236.596 ms
+64 bytes from 196.216.2.6: icmp_seq=9 ttl=50 time=228.248 ms
+64 bytes from 196.216.2.6: icmp_seq=10 ttl=50 time=230.401 ms
+64 bytes from 196.216.2.6: icmp_seq=11 ttl=50 time=231.945 ms
+64 bytes from 196.216.2.6: icmp_seq=12 ttl=50 time=230.376 ms
+64 bytes from 196.216.2.6: icmp_seq=13 ttl=50 time=229.241 ms
+64 bytes from 196.216.2.6: icmp_seq=14 ttl=50 time=228.108 ms
+64 bytes from 196.216.2.6: icmp_seq=15 ttl=50 time=228.277 ms
+64 bytes from 196.216.2.6: icmp_seq=16 ttl=50 time=230.003 ms
+64 bytes from 196.216.2.6: icmp_seq=17 ttl=50 time=228.165 ms
+64 bytes from 196.216.2.6: icmp_seq=18 ttl=50 time=228.227 ms
+64 bytes from 196.216.2.6: icmp_seq=19 ttl=50 time=241.625 ms
+64 bytes from 196.216.2.6: icmp_seq=20 ttl=50 time=228.745 ms
+64 bytes from 196.216.2.6: icmp_seq=21 ttl=50 time=229.268 ms
+64 bytes from 196.216.2.6: icmp_seq=22 ttl=50 time=228.675 ms
+64 bytes from 196.216.2.6: icmp_seq=23 ttl=50 time=228.515 ms
+64 bytes from 196.216.2.6: icmp_seq=24 ttl=50 time=309.798 ms
+64 bytes from 196.216.2.6: icmp_seq=25 ttl=50 time=229.253 ms
+64 bytes from 196.216.2.6: icmp_seq=26 ttl=50 time=228.227 ms
+64 bytes from 196.216.2.6: icmp_seq=27 ttl=50 time=229.975 ms
+64 bytes from 196.216.2.6: icmp_seq=28 ttl=50 time=228.026 ms
+^C
+--- www.afrinic.net ping statistics ---
+29 packets transmitted, 29 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 228.026/232.547/309.798/14.862 ms
+~ $ ping www.apnic.net
+PING www.apnic.net.cdn.cloudflare.net (104.20.59.194): 56 data bytes
+64 bytes from 104.20.59.194: icmp_seq=0 ttl=58 time=10.976 ms
+64 bytes from 104.20.59.194: icmp_seq=1 ttl=58 time=10.617 ms
+64 bytes from 104.20.59.194: icmp_seq=2 ttl=58 time=10.829 ms
+64 bytes from 104.20.59.194: icmp_seq=3 ttl=58 time=10.684 ms
+64 bytes from 104.20.59.194: icmp_seq=4 ttl=58 time=10.726 ms
+^C
+--- www.apnic.net.cdn.cloudflare.net ping statistics ---
+5 packets transmitted, 5 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 10.617/10.766/10.976/0.125 ms
+~ $ ping www.ripe.net
+PING www.ripe.net (193.0.6.139): 56 data bytes
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+Request timeout for icmp_seq 2
+Request timeout for icmp_seq 3
+Request timeout for icmp_seq 4
+Request timeout for icmp_seq 5
+^C
+--- www.ripe.net ping statistics ---
+7 packets transmitted, 0 packets received, 100.0% packet loss
+~ $ ping www.ripe.net
+PING www.ripe.net (193.0.6.139): 56 data bytes
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+Request timeout for icmp_seq 2
+çRequest timeout for icmp_seq 3
+çRequest timeout for icmp_seq 4
+Request timeout for icmp_seq 5
+^C
+--- www.ripe.net ping statistics ---
+7 packets transmitted, 0 packets received, 100.0% packet loss
+~ $ ping lacnic.net
+PING lacnic.net (200.3.14.10): 56 data bytes
+64 bytes from 200.3.14.10: icmp_seq=0 ttl=46 time=233.337 ms
+64 bytes from 200.3.14.10: icmp_seq=1 ttl=46 time=233.625 ms
+64 bytes from 200.3.14.10: icmp_seq=2 ttl=46 time=242.689 ms
+64 bytes from 200.3.14.10: icmp_seq=3 ttl=46 time=235.260 ms
+64 bytes from 200.3.14.10: icmp_seq=4 ttl=46 time=237.805 ms
+64 bytes from 200.3.14.10: icmp_seq=5 ttl=46 time=251.831 ms
+^C
+--- lacnic.net ping statistics ---
+6 packets transmitted, 6 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 233.337/239.091/251.831/6.514 ms
+

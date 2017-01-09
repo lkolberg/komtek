@@ -1,0 +1,9 @@
+Last login: Wed Jan  4 14:15:02 on ttys000
+~ $ traceroute www.cisco.com
+traceroute to e144.dscb.akamaiedge.net (23.5.49.120), 64 hops max, 52 byte packets
+ 1  10.0.1.1 (10.0.1.1)  1.601 ms  1.208 ms  1.107 ms
+ 2  10.243.0.1 (10.243.0.1)  7.033 ms  8.402 ms  7.858 ms
+ 3  cm-84.208.41.70.getinternet.no (84.208.41.70)  15.675 ms  10.222 ms  15.760 ms
+ 4  a23-5-48-1.deploy.static.akamaitechnologies.com (23.5.48.1)  15.918 ms  14.903 ms  15.858 ms
+ 5  a23-5-49-120.deploy.static.akamaitechnologies.com (23.5.49.120)  17.009 ms  16.544 ms  15.710 ms
+~ $ 

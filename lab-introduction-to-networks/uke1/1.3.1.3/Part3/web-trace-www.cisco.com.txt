@@ -1,0 +1,9 @@
+TracePath Output:
+ 1:  pera.subnetonline.com (141.138.203.105)                0.127ms pmtu 1500
+ 1:  gw-v130.xl-is.net (141.138.203.1)                      2.900ms 
+ 2:  te0-22.cr1.nkf.as49685.net (80.246.207.190)          asymm  4   1.137ms 
+ 3:  amsix-ams8.netarch.akamai.com (80.249.209.208)       asymm  5   1.426ms 
+ 4:  a23-62-103-197.deploy.static.akamaitechnologies.com (23.62.103.197) asymm  6   1.408ms reached
+     Resume: pmtu 1500 hops 4 back 6 
+
+ ---- Finished ------ 

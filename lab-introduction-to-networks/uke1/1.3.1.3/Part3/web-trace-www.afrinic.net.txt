@@ -1,0 +1,17 @@
+TracePath Output:
+ 1:  pera.subnetonline.com (141.138.203.105)                0.175ms pmtu 1500
+ 1:  gw-v130.xl-is.net (141.138.203.1)                     11.363ms 
+ 2:  te0-22.cr1.nkf.as49685.net (80.246.207.190)          asymm  4   1.135ms 
+ 3:  te0-2-0-5.ccr21.ams04.atlas.cogentco.com (149.11.38.9) asymm  5   1.120ms 
+ 4:  be2311.ccr41.ams03.atlas.cogentco.com (154.54.74.89) asymm  6   1.377ms 
+ 5:  be12194.ccr41.lon13.atlas.cogentco.com (154.54.56.93) asymm  6   8.548ms 
+ 6:  be2792.ccr21.lon02.atlas.cogentco.com (154.54.57.106) asymm  7   8.926ms 
+ 7:  149.6.148.130 (149.6.148.130)                        asymm  9  12.579ms 
+ 8:  core2b-pkl-pos-0-0-5-0.ip.isnet.net (168.209.201.66) asymm  9 183.246ms 
+ 9:  168.209.1.169 (168.209.1.169)                        180.100ms 
+10:  196.37.155.180 (196.37.155.180)                      asymm  9 171.836ms 
+11:  196.216.3.164 (196.216.3.164)                        asymm 13 180.664ms 
+12:  www.afrinic.net (196.216.2.6)                        asymm 13 180.583ms reached
+     Resume: pmtu 1500 hops 12 back 13 
+
+ ---- Finished ------ 

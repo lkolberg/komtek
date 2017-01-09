@@ -1,0 +1,77 @@
+Last login: Fri Jan  6 14:35:58 on ttys004
+~ $ traceroute www.lacnic.net
+traceroute to www.lacnic.net (200.3.14.147), 64 hops max, 52 byte packets
+ 1  212.33.139.217 (212.33.139.217)  2.676 ms  2.349 ms  1.735 ms
+ 2  10.115.10.1 (10.115.10.1)  6.438 ms  2.778 ms  2.745 ms
+ 3  i0004.cr1.svg.xfiber.net (212.33.157.19)  2.956 ms  3.122 ms  2.860 ms
+ 4  i0010.cr6.osl.xfiber.net (212.33.157.17)  11.345 ms
+    i0011.cr6.osl.xfiber.net (212.33.135.131)  11.554 ms
+    i0010.cr6.osl.xfiber.net (212.33.157.17)  11.667 ms
+ 5  te0-0-2-0.nr11.b020379-0.osl01.atlas.cogentco.com (149.6.116.113)  11.709 ms  11.212 ms  11.201 ms
+ 6  te0-0-0-2.rcr21.osl01.atlas.cogentco.com (154.25.0.25)  19.124 ms
+    te0-7-0-2.rcr21.osl01.atlas.cogentco.com (154.25.0.29)  11.585 ms  11.932 ms
+ 7  * be2343.rcr12.bll01.atlas.cogentco.com (154.54.58.194)  24.051 ms  23.416 ms
+ 8  be2708.ccr42.ham01.atlas.cogentco.com (130.117.50.21)  26.822 ms  26.925 ms  27.140 ms
+ 9  be2815.ccr41.ams03.atlas.cogentco.com (154.54.38.205)  36.027 ms  35.354 ms
+    be2816.ccr42.ams03.atlas.cogentco.com (154.54.38.209)  36.039 ms
+10  be12194.ccr41.lon13.atlas.cogentco.com (154.54.56.93)  110.508 ms  117.603 ms
+    be12488.ccr42.lon13.atlas.cogentco.com (130.117.51.41)  115.245 ms
+11  be2317.ccr41.jfk02.atlas.cogentco.com (154.54.30.185)  112.726 ms
+    be2490.ccr42.jfk02.atlas.cogentco.com (154.54.42.85)  116.338 ms
+    be2982.ccr21.bos01.atlas.cogentco.com (154.54.1.117)  110.063 ms
+12  be2094.ccr41.jfk02.atlas.cogentco.com (154.54.30.13)  116.420 ms
+    be2806.ccr41.dca01.atlas.cogentco.com (154.54.40.106)  118.694 ms
+    be2096.ccr42.jfk02.atlas.cogentco.com (154.54.30.41)  114.553 ms
+13  be3084.ccr41.iad02.atlas.cogentco.com (154.54.30.66)  118.404 ms
+    be2806.ccr41.dca01.atlas.cogentco.com (154.54.40.106)  116.483 ms  116.002 ms
+14  be3084.ccr41.iad02.atlas.cogentco.com (154.54.30.66)  118.951 ms
+    be3083.ccr41.iad02.atlas.cogentco.com (154.54.30.54)  120.737 ms
+    be3084.ccr41.iad02.atlas.cogentco.com (154.54.30.66)  119.805 ms
+15  * xe-2-2-1-0.border-a.ash.ctbc.com.br (38.122.63.142)  120.063 ms  119.489 ms
+16  * * *
+17  * 200-160-127-001.static.spo.ctbc.com.br (200.160.127.1)  487.802 ms *
+18  200-160-127-001.static.spo.ctbc.com.br (200.160.127.1)  521.168 ms  306.782 ms  306.810 ms
+19  ae0-0.ar3.nu.registro.br (200.160.0.249)  257.661 ms  247.506 ms
+    xe-5-0-1-0.core1.jd.registro.br (200.160.0.178)  404.434 ms
+20  ae0-0.ar3.nu.registro.br (200.160.0.249)  244.411 ms  252.479 ms
+    gw01.lacnic.registro.br (200.160.0.212)  292.369 ms
+21  200.3.12.36 (200.3.12.36)  297.637 ms *  296.264 ms
+22  200.3.12.36 (200.3.12.36)  307.355 ms *  523.942 ms
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+31  * * *
+32  * * *
+33  * * *
+34  * * *
+35  * * *
+36  * * *
+37  * * *
+38  * * *
+39  * * *
+40  * * *
+41  * * *
+42  * * *
+43  * * *
+44  * * *
+45  * * *
+46  * * *
+47  * * *
+48  * * *
+49  * * *
+50  * * *
+51  * * *
+52  * * *
+53  * * *
+54  * * *
+55  * * *
+56  * * *
+57  * * *
+58  * * *
+^C
+~ $ 

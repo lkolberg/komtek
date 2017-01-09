@@ -1,0 +1,10 @@
+Last login: Fri Jan  6 20:56:26 on ttys005
+~ $ traceroute www.cisco.com
+traceroute to e144.dscb.akamaiedge.net (104.123.112.145), 64 hops max, 52 byte packets
+ 1  212.33.139.217 (212.33.139.217)  2.753 ms  1.777 ms  1.802 ms
+ 2  10.115.10.1 (10.115.10.1)  2.777 ms  2.838 ms  4.587 ms
+ 3  i0003.cr1.svg.xfiber.net (212.33.135.133)  3.368 ms  2.766 ms  3.100 ms
+ 4  i0019.cr5.osl.xfiber.net (212.33.135.132)  11.132 ms  11.135 ms  11.678 ms
+ 5  213.248.76.17 (213.248.76.17)  12.819 ms  11.180 ms  10.537 ms
+ 6  a104-123-112-145.deploy.static.akamaitechnologies.com (104.123.112.145)  11.257 ms  11.461 ms  11.334 ms
+~ $ 

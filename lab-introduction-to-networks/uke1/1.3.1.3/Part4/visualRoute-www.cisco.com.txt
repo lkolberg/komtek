@@ -1,0 +1,14 @@
+10.100.203
+212.33.139.217
+10.115.10.1
+Det er et peering point mellom disse to
+212.33.135.133
+212.33.135.132
+Det er et peering point mellom disse to
+213.248.76.17
+Det er et peering point mellom disse to
+104.123.11.145
+RTT avg - 6.3ms /max-11ms
+hops - 7
+alternate routes - none
+packet loss - 0%
