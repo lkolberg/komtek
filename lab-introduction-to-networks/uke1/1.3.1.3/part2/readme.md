@@ -55,7 +55,7 @@ traceroute to www.afrinic.net (196.216.2.6), 64 hops max, 52 byte packets
 
 **What happens at hop 7?**<br>
 It looks like the travel time is inconsistent. The RTT2 package uses more time than the other two.
-One of the packages is actually sendt to a different IP adress <br>
+<br>
 
 # Qustions from the introduction to networking book 1.3.1.3 Part 2
 **What happens at hop 7?**<br>
